@@ -1,6 +1,6 @@
-lista = [1,2,3,4,5,6,7,8,9,10]
+from random import randint
+lista = [randint(1,10) for i in range (0,10)]
 print(lista)
-cuadrado = (lista)**2
-print(cuadrado)
-cubo = (lista)*3
-print(cubo)
+for i in lista:
+    print(f"{i} elevado al cuadrado es {i**2} y elevado al cubo es {i**3}")
+    
